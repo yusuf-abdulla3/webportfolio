@@ -5,6 +5,7 @@
 
   @include respond(phone) {
     border: 0px;
+    color: $white-color;
   }
 
   &__text {

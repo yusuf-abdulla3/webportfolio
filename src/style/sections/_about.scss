@@ -1,9 +1,11 @@
 #about {
-  background-color: $primary-color;
+  background-color: #0a192f;
   background-image: linear-gradient(
     135deg,
     $primary-color 0%,
-    $secondary-color 100%
+    #0a192f 100%,
+    
+    
   );
   color: $white-color;
   height: 100%;
@@ -35,6 +37,11 @@
       @include respond(tab-land) {
         height: 100%;
       }
+    }
+
+    img { 
+      border: solid 3px black;
+      border-radius: 5%;
     }
 
     &__info {

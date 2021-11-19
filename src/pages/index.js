@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 import { Helmet } from 'react-helmet';
 import App from '../components/App';
 import { headData } from '../mock/data';
@@ -12,9 +13,9 @@ export default () => {
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>{title || 'Gatsby Simplefolio'}</title>
+        <title>{title || 'Yusuf Abdulla Website Portfolio'}</title>
         <html lang={lang || 'en'} />
-        <meta name="description" content={description || 'Gatsby Simplefolio'} />
+        <meta name="description" content={description || 'Website Portfolio'} />
       </Helmet>
       <App />
     </>

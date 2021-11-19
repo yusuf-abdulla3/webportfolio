@@ -1,0 +1,25 @@
+Navbar {
+  display: flex;
+  flex-shrink: 10;
+  position:static;
+  background-color: violet;
+
+
+  .current {
+    color: red;
+  }
+}
+
+#resume-button {
+  display: flex;
+  justify-content: center;
+  flex-shrink: -10;
+  align-items: center;
+  color: lightcoral;
+  font-weight: bold;
+  border: none;
+
+
+
+
+}
