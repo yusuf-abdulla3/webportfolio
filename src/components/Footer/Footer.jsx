@@ -12,7 +12,7 @@ const Footer = () => {
   const { isEnabled } = githubButtons;
 
   return (
-    <footer className="footer navbar-static-bottom">
+    <footer className="footer navbar-static-bottom" style={{ backgroundColor: 'black' }}>
       <Container>
         <span className="back-to-top">
           <Link to="hero" smooth duration={1000}>
@@ -38,8 +38,12 @@ const Footer = () => {
         </div>
         <hr />
         <p className="footer__text">
-          © {new Date().getFullYear()} - Website Portfolio By {' '}
-          <a href="https://www.linkedin.com/in/yusuf-abdulla/" target="_blank" rel="noopener noreferrer">
+          © {new Date().getFullYear()} - Website Portfolio By{' '}
+          <a
+            href="https://www.linkedin.com/in/yusuf-abdulla/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Yusuf Abdulla
           </a>
         </p>
