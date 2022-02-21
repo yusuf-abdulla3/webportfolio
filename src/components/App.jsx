@@ -53,6 +53,9 @@ function App() {
             <Nav.Link href="#about" style={{ color: 'white', fontSize: '2em' }}>
               About
             </Nav.Link>
+            <Nav.Link href="#experience" style={{ color: 'white', fontSize: '2em' }}>
+              Experience
+            </Nav.Link>
             <Nav.Link href="#projects" style={{ color: 'white', fontSize: '2em' }}>
               Projects
             </Nav.Link>

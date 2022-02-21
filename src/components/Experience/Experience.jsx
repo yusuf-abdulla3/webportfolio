@@ -23,7 +23,7 @@ const Experience = () => {
   }, []);
 
   return (
-    <section id="about">
+    <section id="experience">
       <Container>
         <Title title="Experience" />
         <Row className="experience-wrapper">
