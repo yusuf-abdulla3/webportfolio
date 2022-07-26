@@ -21,7 +21,7 @@ import {
 function App() {
   const [hero, setHero] = useState({});
   const [about, setAbout] = useState({});
-  const [experience, setExperience] = useState({});
+  const [experience, setExperience] = useState([]);
   const [projects, setProjects] = useState([]);
   const [contact, setContact] = useState({});
   const [footer, setFooter] = useState({});
@@ -29,7 +29,7 @@ function App() {
   useEffect(() => {
     setHero({ ...heroData });
     setAbout({ ...aboutData });
-    setExperience({ ...experienceData });
+    setExperience([...experienceData]);
     setProjects([...projectsData]);
     setContact({ ...contactData });
     setFooter({ ...footerData });

@@ -32,20 +32,53 @@ export const aboutData = {
 // • Helping Hands is a non-profit organization and interdisciplinary youth-based platform that promotes and aids youth in community projects, volunteering, and engagement.
 // • Oversee the backend, deployment, databases, SendGrid integration, using ActiveStorage with S3 of a Ruby on Rails & React app.
 // • Writings of internal technical documentation for training purposes.
-export const experienceData = {
-  img: 'helpinghands.jpg',
-  paragraphOne:
-    'Developed key features on a full stack application and debugged issues that arised. Focused on working with React on the front-end. Deployed the beta via Heroku and conducted user testing for further feedback',
-  paragraphTwo:
-    "Designed new pages for the website alongside a UX designer and connected Google Analytics and Mixpanel in order to gain user data to improve the website's performance.",
-  paragraphThree:
-    'Updated internal technical documentations for training purposes for future developers that join the team',
-  paragraphFour:
-    'Tech Stack: React, Ruby on Rails, Bootstrap, Styled Components, AWS, Heroku, HTML, CSS, Google Analytics, Mixpanel, Airtable ',
-};
+export const experienceData = [
+  {
+    id: nanoid(),
+    companyName: 'BBE Expediting Ltd',
+    img: 'bbe_logo.png',
+    occupation: 'Junior Software Developer',
+    startDate: 'Apr. 2022',
+    endDate: 'Present',
+    paragraphOne:
+      'Participating in the full development cycle, end-to-end, from design, implementation, & testing to documentation, delivery & maintenance',
+    paragraphTwo:
+      'Assisting lead developer in enhancing and refactoring services to adhere to DRY, YAGNI, and KISS principles to improve performance, constant up-time, and maintainability',
+    paragraphThree:
+      'Developing and testing RESTful APIs using Python, Django REST Framework, Redis, Celery and Postman',
+    paragraphFour:
+      'Tech Stack: Python, Django, Javascript, jQuery, SCSS, Bootstrap, MySQL, Celery, Redis, Travis CI, Postman',
+  },
+
+  {
+    id: nanoid(),
+    companyName: 'Helping Hands',
+    occupation: 'Junior Software Developer',
+    startDate: 'Dec. 2021',
+    endDate: 'Mar. 2022',
+    img: 'helpinghands.jpg',
+    paragraphOne:
+      'Developed key features on a full stack application and debugged issues that arised. Focused on working with React on the front-end. Deployed the beta via Heroku and conducted user testing for further feedback',
+    paragraphTwo:
+      "Designed new pages for the website alongside a UX designer and connected Google Analytics and Mixpanel in order to gain user data to improve the website's performance.",
+    paragraphThree:
+      'Updated internal technical documentations for training purposes for future developers that join the team',
+    paragraphFour:
+      'Tech Stack: React, Ruby on Rails, Bootstrap, Styled Components, AWS, Heroku, HTML, CSS, Google Analytics, Mixpanel, Airtable ',
+  },
+];
 
 // PROJECTS DATA
 export const projectsData = [
+  {
+    id: nanoid(),
+    img: 'netflix-clone-img.png',
+    title: 'Netflix Clone',
+    info: 'A netflix clone that users can interact with to view movie trailers of popular TV Shows/Movies',
+    info2: 'Tech Stack: React, Firebase, CSS, TMDB API',
+    url: 'https://github.com/yusuf-abdulla3/netflix-clone',
+    deployedUrl: 'https://netflix-clone-38dd4.web.app/',
+  },
   {
     id: nanoid(),
     img: 'spotify-profile-app.jpg',
