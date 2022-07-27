@@ -13,7 +13,7 @@ const ExperienceImg = ({ filename, alt }) => (
               relativePath
               name
               childImageSharp {
-                fixed(width: 500) {
+                fixed(width: 300) {
                   ...GatsbyImageSharpFixed
                 }
               }

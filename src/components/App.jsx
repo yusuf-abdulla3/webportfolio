@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { Navbar, Container, Nav } from 'react-bootstrap';
 import Hero from './Hero/Hero';
 import About from './About/About';
 import Experience from './Experience/Experience';
 import Projects from './Projects/Projects';
 import Contact from './Contact/Contact';
 import Footer from './Footer/Footer';
+import Navbar from './Navbar/Navbar';
 
 import { PortfolioProvider } from '../context/context';
 
@@ -37,7 +37,8 @@ function App() {
 
   return (
     <>
-      <Navbar
+      <Navbar />
+      {/* <Navbar
         sticky="top"
         variant="dark"
         style={{ backgroundColor: 'black', paddingBottom: '1em', marginBottom: '2em' }}
@@ -71,7 +72,7 @@ function App() {
             </Nav.Link>
           </Nav>
         </Container>
-      </Navbar>
+      </Navbar> */}
       <PortfolioProvider value={{ hero, about, experience, projects, contact, footer }}>
         <Hero />
         <About />
