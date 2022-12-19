@@ -132,7 +132,7 @@ export const projectsData = [
     info: 'Tweeter is a simple, single-page Twitter clone that provides a responsive design. Whether you are using a small device or a device with a larger screen, tweeter provides a responsive design that can adapt! Just like Twitter, the user cannot go over the 140 character limit. The tweet is then posted in real time.',
     info2: 'Tech Stack: Node.js, Express.js, jQuery, Bootstrap, HTML, CSS',
     url: 'https://github.com/yusuf-abdulla3/tweeter',
-    deployedUrl: 'https://github.com/yusuf-abdulla3/tweeter',
+    deployedUrl: 'https://tweeter-mock-app.vercel.app/',
   },
   {
     id: nanoid(),
