@@ -86,7 +86,7 @@ export const projectsData = [
     info: 'Provides users with a profile that shows their top artists/tracks for the last month, 6 months and all time. It also allows users to access their playlists and sort tracks by categories such as: Tempo, Dancability and Energy.',
     info2: 'Tech Stack: Node.js, Express, React, Spotify API, Styled Components',
     url: 'https://github.com/yusuf-abdulla3/spotify-profile-unwrapped',
-    deployedUrl: 'http://spotify-profile-unwrapped.herokuapp.com',
+    deployedUrl: 'http://spotify-profile-unwrapped.onrender.com',
   },
   {
     id: nanoid(),
