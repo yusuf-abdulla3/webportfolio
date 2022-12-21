@@ -51,14 +51,26 @@ const Projects = () => {
                           {info2 || ''}
                         </p>
                       </div>
-                      <a
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="cta-btn cta-btn--hero"
-                        href={url || '#!'}
-                      >
-                        Github Repository
-                      </a>
+                      <div className="d-flex flex-row">
+                        {deployedUrl && (
+                          <a
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="cta-btn cta-btn--hero"
+                            href={deployedUrl || '#!'}
+                          >
+                            See Project Live
+                          </a>
+                        )}
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="cta-btn cta-btn--hero"
+                          href={url || '#!'}
+                        >
+                          Github Repository
+                        </a>
+                      </div>
 
                       {repo && (
                         <a
