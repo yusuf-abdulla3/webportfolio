@@ -37,7 +37,7 @@ export const experienceData = [
     id: nanoid(),
     companyName: 'BBE Expediting Ltd',
     img: 'bbe_logo.png',
-    occupation: 'Junior Software Developer',
+    occupation: 'Software Developer',
     startDate: 'Apr. 2022',
     endDate: 'Present',
     paragraphOne:
@@ -53,7 +53,7 @@ export const experienceData = [
   {
     id: nanoid(),
     companyName: 'Helping Hands',
-    occupation: 'Junior Software Developer',
+    occupation: 'Software Developer',
     startDate: 'Dec. 2021',
     endDate: 'Mar. 2022',
     img: 'helpinghands.jpg',
@@ -96,7 +96,6 @@ export const projectsData = [
     info2:
       'Tech Stack: PostgreSQL, Express, React.js, Node.js, Bootstrap, Giphy API, Unsplash API, HTML, CSS',
     url: 'https://github.com/yusuf-abdulla3/Ciao',
-    deployedUrl: 'https://github.com/yusuf-abdulla3/Ciao',
   },
   {
     id: nanoid(),
@@ -105,7 +104,6 @@ export const projectsData = [
     info: 'An full stack app that allows users to book, edit, and delete interviewers with select interviewers based on their weekly availability.',
     info2: 'Tech Stack: PostgreSQL, Express, React.js, Node.js, HTML, CSS',
     url: 'https://github.com/yusuf-abdulla3/scheduler',
-    deployedUrl: 'https://github.com/yusuf-abdulla3/scheduler',
   },
   {
     id: nanoid(),
@@ -114,7 +112,6 @@ export const projectsData = [
     info: 'Jungle is an e-commerce web application built using Ruby on Rails which allows customers to purchase items using their credit card via stripe. It also allows store owners to update products based on their inventory.',
     info2: 'Tech Stack: Ruby on Rails, PostGreSQL, Stripe API, Bcrypt, RSpec, Capybara, HTML, CSS',
     url: 'https://github.com/yusuf-abdulla3/jungle-rails',
-    deployedUrl: 'https://github.com/yusuf-abdulla3/jungle-rails',
   },
   {
     id: nanoid(),
@@ -123,7 +120,6 @@ export const projectsData = [
     info: 'Collborated with a team to develop a restaurant order-pickup app in which the the customer can order any item on the menu. The order is then sent to the cafe via SMS using Twilio API. The restaurant inputs the amount of time it will take for the order to be completed which is then communicated to the customer via SMS using Twilio API.',
     info2: 'PostgreSQL, Express, Node.js, Bootstrap, Twilio API, HTML, CSS',
     url: 'https://github.com/xazzer81/UberDrink',
-    deployedUrl: 'https://github.com/xazzer81/UberDrink',
   },
   {
     id: nanoid(),
@@ -141,7 +137,6 @@ export const projectsData = [
     info: 'TinyApp is a full stack web application built with Node and Express that allows users to shorten long URLs (kind of like bit.ly).',
     info2: 'Tech Stack: Node.js, Express, Bootstrap, HTML, CSS',
     url: 'https://github.com/yusuf-abdulla3/tinyapp',
-    deployedUrl: 'https://github.com/yusuf-abdulla3/tinyapp',
   },
 ];
 
