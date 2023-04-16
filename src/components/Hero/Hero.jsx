@@ -4,7 +4,6 @@ import Fade from 'react-reveal/Fade';
 import { Link } from 'react-scroll';
 import PortfolioContext from '../../context/context';
 import BackgroundVideo from '../../videos/background-video.mp4';
-import LogoVideo from '../../videos/logo.mp4';
 
 const Header = () => {
   const { hero } = useContext(PortfolioContext);
@@ -25,51 +24,39 @@ const Header = () => {
 
   return (
     <>
-      <section id="hero" className="jumbotron">
-        <video
-          autoPlay
-          loop
-          muted
-          style={{
-            position: 'absolute',
-            width: '100%',
-            left: '50%',
-            top: '50%',
-            height: '100%',
-            objectFit: 'cover',
-            transform: 'translate(-50%, -50%)',
-          }}
-        >
-          <source src={BackgroundVideo} type="video/mp4" />
-        </video>
+      <section id="hero" className="jumbotron" style={{ display: 'flex', flexDirection: 'column' }}>
+        <Container>
+          <video
+            autoPlay
+            loop
+            muted
+            style={{
+              position: 'absolute',
+              width: '100%',
+              left: '50%',
+              top: '50%',
+              height: '100%',
+              objectFit: 'cover',
+              transform: 'translate(-50%, -50%)',
+            }}
+          >
+            <source src={BackgroundVideo} type="video/mp4" />
+          </video>
+        </Container>
 
         <Container
           style={{
             backgroundColor: 'rgba(0, 0, 0, 0.5)',
             zIndex: '1',
             borderRadius: '10%',
-            padding: '3em 0',
+            padding: '10em 0',
+            marginTop: '10em',
           }}
         >
           <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
-            <video
-              autoPlay
-              loop
-              muted
-              style={{
-                width: '33%',
-                height: 'auto',
-                borderRadius: '15%',
-                boxshadow: '200px 200px',
-                border: 'solid black 3px',
-                marginBottom: '3em',
-              }}
-            >
-              <source src={LogoVideo} type="video/mp4" />
-            </video>
             <h1 className="hero-title">
               {title || 'Hi, my name is'}{' '}
-              <span className="new-text-color">{name || "I'm a Full Stack Developer."}</span>
+              <span className="new-text-color">{name || "I'm a Full Stack Developer"}</span>
             </h1>
           </Fade>
           <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">

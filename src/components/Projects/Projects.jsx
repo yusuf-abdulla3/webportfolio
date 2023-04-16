@@ -1,10 +1,11 @@
 import React, { useContext, useEffect, useState } from 'react';
 import Fade from 'react-reveal/Fade';
 import Tilt from 'react-tilt';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Col } from 'react-bootstrap';
+import Grid from '@mui/material/Grid';
 import PortfolioContext from '../../context/context';
 import Title from '../Title/Title';
-import ProjectImg from '../Image/ProjectImg';
+import ProjectCard from './Card';
 
 const Projects = () => {
   const { projects } = useContext(PortfolioContext);
@@ -27,103 +28,48 @@ const Projects = () => {
       <Container>
         <div className="project-wrapper">
           <Title title="Projects" />
-          {projects.map((project) => {
-            const { title, info, info2, url, deployedUrl, repo, img, id } = project;
+          <Grid container spacing={2} className="project-wrapper__container">
+            {projects.map((project) => {
+              const { title, info, info2, url, deployedUrl, img, id } = project;
 
-            return (
-              <Row key={id}>
-                <Col lg={4} sm={12}>
-                  <Fade
-                    left={isDesktop}
-                    bottom={isMobile}
-                    duration={1000}
-                    delay={500}
-                    distance="30px"
-                  >
-                    <div className="project-wrapper__text">
-                      <h3 className="project-wrapper__text-title">{title || 'Project Title'}</h3>
-                      <div>
-                        <p>
-                          {info ||
-                            'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.'}
-                        </p>
-                        <p className="mb-4" id="tech-stack">
-                          {info2 || ''}
-                        </p>
-                      </div>
-                      <div className="d-flex flex-row">
-                        {deployedUrl && (
-                          <a
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="cta-btn cta-btn--hero"
-                            href={deployedUrl || '#!'}
-                          >
-                            See Project Live
-                          </a>
-                        )}
-                        <a
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="cta-btn cta-btn--hero"
-                          href={url || '#!'}
-                        >
-                          Github Repository
-                        </a>
-                      </div>
-
-                      {repo && (
-                        <a
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="cta-btn text-color-main"
-                          href={repo}
-                        >
-                          Source Code
-                        </a>
-                      )}
-                    </div>
-                  </Fade>
-                </Col>
-                <Col lg={8} sm={12}>
-                  <Fade
-                    right={isDesktop}
-                    bottom={isMobile}
-                    duration={1000}
-                    delay={1000}
-                    distance="30px"
-                  >
-                    <div className="project-wrapper__image">
-                      <a
-                        href={deployedUrl || '#!'}
-                        target="_blank"
-                        aria-label="Project Link"
-                        rel="noopener noreferrer"
+              return (
+                <Container key={id}>
+                  <Col lg={12} sm={12}>
+                    <Fade
+                      right={isDesktop}
+                      bottom={isMobile}
+                      duration={1000}
+                      delay={1000}
+                      distance="30px"
+                    >
+                      <Tilt
+                        options={{
+                          reverse: false,
+                          max: 8,
+                          perspective: 1000,
+                          scale: 1,
+                          speed: 300,
+                          transition: true,
+                          axis: null,
+                          reset: true,
+                          easing: 'cubic-bezier(.03,.98,.52,.99)',
+                        }}
                       >
-                        <Tilt
-                          options={{
-                            reverse: false,
-                            max: 8,
-                            perspective: 1000,
-                            scale: 1,
-                            speed: 300,
-                            transition: true,
-                            axis: null,
-                            reset: true,
-                            easing: 'cubic-bezier(.03,.98,.52,.99)',
-                          }}
-                        >
-                          <div data-tilt className="thumbnail rounded">
-                            <ProjectImg alt={title} filename={img} />
-                          </div>
-                        </Tilt>
-                      </a>
-                    </div>
-                  </Fade>
-                </Col>
-              </Row>
-            );
-          })}
+                        <ProjectCard
+                          title={title}
+                          img={img}
+                          deployedUrl={deployedUrl}
+                          url={url}
+                          info={info}
+                          info2={info2}
+                        />
+                      </Tilt>
+                    </Fade>
+                  </Col>
+                </Container>
+              );
+            })}
+          </Grid>
         </div>
       </Container>
     </section>
