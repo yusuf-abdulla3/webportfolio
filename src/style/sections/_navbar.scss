@@ -1,7 +1,4 @@
 .nav{
-  background-color: none;
-}
-.active {
   background-color: #111;
   position: fixed;
   top:0;
@@ -9,7 +6,7 @@
   padding: 20px;
   height: 70px;
   z-index: 5;
-  display: flex;
+    display: flex;
   justify-content: space-between;
 
   /* Animations */

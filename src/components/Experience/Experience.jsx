@@ -95,7 +95,7 @@ const Experience = () => {
                       style={{
                         marginBottom: '1.5em',
                         fontSize: '1.5em',
-                        color: 'red',
+                        color: '#FA5F55',
                         fontWeight: 'bold',
                       }}
                     >

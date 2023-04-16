@@ -90,8 +90,7 @@ export const projectsData = [
     img: 'ciao.jpg',
     title: 'Ciao',
     info: 'App that allows users to create virtual greeting cards containing text, images, gifs and videos that they can build with others and send to a recipient.',
-    info2:
-      'Tech Stack: PostgreSQL, Express, React.js, Node.js, Bootstrap, Giphy API, Unsplash API, HTML, CSS',
+    info2: 'Tech Stack: PostgreSQL, Express, React.js, Node.js, Bootstrap, Giphy API, Unsplash API',
     url: 'https://github.com/yusuf-abdulla3/Ciao',
   },
   {
@@ -99,7 +98,7 @@ export const projectsData = [
     img: 'scheduler.png',
     title: 'Interview Scheduler',
     info: 'App that allows users to book, edit, and delete interviews with select interviewers based on their weekly availability.',
-    info2: 'Tech Stack: PostgreSQL, Express, React.js, Node.js, HTML, CSS',
+    info2: 'Tech Stack: PostgreSQL, Express, React.js, Node.js',
     url: 'https://github.com/yusuf-abdulla3/scheduler',
   },
   {
@@ -107,7 +106,7 @@ export const projectsData = [
     img: 'jungle.png',
     title: 'Jungle',
     info: 'E-commerce web application that allows customers to purchase items using their credit card via stripe and allows store owners to update products based on their inventory.',
-    info2: 'Tech Stack: Ruby on Rails, PostGreSQL, Stripe API, Bcrypt, RSpec, Capybara, HTML, CSS',
+    info2: 'Tech Stack: Ruby on Rails, PostGreSQL, Stripe API, Bcrypt, RSpec, Capybara',
     url: 'https://github.com/yusuf-abdulla3/jungle-rails',
   },
   {
@@ -115,7 +114,7 @@ export const projectsData = [
     img: 'cafe.jpg',
     title: 'Cafe Order-Pickup App',
     info: 'Order-pickup app that allows customers to order any item on the menu. Allows the restaurant to inform customers of how long the order will take via SMS.',
-    info2: 'PostgreSQL, Express, Node.js, Bootstrap, Twilio API, HTML, CSS',
+    info2: 'PostgreSQL, Express, Node.js, Bootstrap, Twilio API',
     url: 'https://github.com/xazzer81/UberDrink',
   },
   {

@@ -16,7 +16,7 @@ const Contact = () => {
           <div className="contact-wrapper">
             <p className="contact-wrapper__text">
               {cta ||
-                'Feel free to reach out to me! Click the button below to contact me via email or connect with me on LinkedIn which you can find below.'}
+                'Feel free to reach out to me! You can contact me via email or connect with me on LinkedIn below.'}
             </p>
             <a
               target="_blank"

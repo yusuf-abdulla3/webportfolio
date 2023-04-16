@@ -6,7 +6,7 @@
     $primary-color 0%,
     #0a192f 100%
   );
-  margin-top: -15rem;
+  margin-top: -22rem;
   padding-top: 15rem;
 
   
@@ -17,6 +17,7 @@
   }
 
   .project-wrapper {
+    margin-top: 5rem;
     margin-bottom: 15rem;
 
     @include respond(phone) {
@@ -91,13 +92,73 @@
     grid-template-columns: repeat(auto-fill, 220px); //the width of the card 
     justify-content: center;
     grid-gap: 40px;
-      // border: 4px solid red;
-
+    margin-top: 1em;
     }
   }
 }
 
 #tech-stack {
   font-weight: bold ;
-  color: crimson;
+  color: #FA5F55
 }
+
+.project_card__button1 {
+    background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    flex-shrink: 0;
+    font-family: "Inter UI","SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    height: 4rem;
+    width: 10rem;
+    padding: 0 1.6rem;
+    text-align: center;
+    text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+    transition: all .5s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+  
+  &:hover {
+    box-shadow: rgba(80, 63, 205, 0.5) 0 1px 30px;
+    transition-duration: .1s;
+  }
+  &__disabled {
+    border-radius: 8px;
+    border-style: none;    
+    background-color: grey;
+    color: white;
+    cursor: not-allowed;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    flex-shrink: 0;
+    font-family: "Inter UI","SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    height: 4rem;
+    width: 10rem;
+    padding: 0 1.6rem;
+    text-align: center;
+    text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+    transition: all .5s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+}
+
+// .card_buttons{
+//   display:flex;
+//   justify-content: center;
+// }
+

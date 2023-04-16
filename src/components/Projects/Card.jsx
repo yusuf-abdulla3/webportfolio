@@ -2,36 +2,76 @@ import * as React from 'react';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
-import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import PropTypes from 'prop-types';
 import ProjectImg from '../Image/ProjectImg';
 
 const ProjectCard = ({ title, info, info2, deployedUrl, url, img }) => {
   return (
-    <Card sx={{ maxWidth: 345, maxheight: 700, backgroundColor: '#202020' }}>
+    <Card
+      sx={{
+        width: '25rem',
+        height: '40rem',
+        maxWidth: 600,
+        maxheight: 800,
+        backgroundColor: '#202020',
+      }}
+    >
       <div data-tilt className="thumbnail rounded">
         <ProjectImg alt={title} filename={img} />
       </div>
       <CardContent>
-        <Typography gutterBottom variant="h5" component="div" style={{ color: 'white' }}>
+        <Typography
+          gutterBottom
+          variant="h5"
+          component="div"
+          style={{ color: 'white', fontSize: '1.8rem' }}
+        >
           {title}
         </Typography>
-        <Typography variant="body2" color="text.secondary" style={{ color: 'white' }}>
+        <Typography
+          variant="body1"
+          color="text.secondary"
+          style={{ color: 'white', fontSize: '1.2rem' }}
+        >
           {info}
         </Typography>
         <br />
-        <Typography variant="body2" style={{ color: 'red' }}>
+        <Typography variant="body1" style={{ color: '#FA5F55', fontSize: '1rem' }}>
           {info2}
         </Typography>
       </CardContent>
-      <CardActions>
-        <Button href={deployedUrl} size="small" style={{ color: 'white' }}>
-          See Live
-        </Button>
-        <Button href={url} size="small" style={{ color: 'white' }}>
+      <CardActions className="justify-content-center">
+        {deployedUrl ? (
+          <a
+            href={deployedUrl}
+            target="_blank"
+            className="project_card__button1"
+            role="button"
+            rel="noreferrer"
+          >
+            See Live
+          </a>
+        ) : (
+          <a
+            href={deployedUrl}
+            target="_blank"
+            className="project_card__button1__disabled"
+            role="button"
+            rel="noreferrer"
+          >
+            See Live
+          </a>
+        )}
+        <a
+          href={url}
+          target="_blank"
+          className="project_card__button1"
+          role="button"
+          rel="noreferrer"
+        >
           GitHub Repo
-        </Button>
+        </a>
       </CardActions>
     </Card>
   );

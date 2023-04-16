@@ -28,7 +28,7 @@ const Projects = () => {
       <Container>
         <div className="project-wrapper">
           <Title title="Projects" />
-          <Grid container spacing={2} className="project-wrapper__container">
+          <Grid container spacing={10} className="project-wrapper__container">
             {projects.map((project) => {
               const { title, info, info2, url, deployedUrl, img, id } = project;
 
