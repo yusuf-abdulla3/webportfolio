@@ -13,33 +13,51 @@ const AppNavbar = () => {
     <Navbar variant="primary" sticky="top" className="nav">
       <Container>
         {isMobile ? (
-          ''
+          <Nav className="me-auto">
+            <Nav.Link style={{ fontWeight: 'bold' }} className="nav--item" href="#hero">
+              Home
+            </Nav.Link>
+            <Nav.Link style={{ fontWeight: 'bold' }} href="#about">
+              About
+            </Nav.Link>
+            <Nav.Link style={{ fontWeight: 'bold' }} href="#experience">
+              Experience
+            </Nav.Link>
+            <Nav.Link style={{ fontWeight: 'bold' }} href="#projects">
+              Projects
+            </Nav.Link>
+            <Nav.Link style={{ fontWeight: 'bold' }} href="#contact">
+              Contact
+            </Nav.Link>
+          </Nav>
         ) : (
-          <Navbar.Brand href="#home">
-            <img className="nav__logo" src={logo} alt="logo" />
-          </Navbar.Brand>
+          <>
+            <Navbar.Brand href="#home">
+              <img className="nav__logo" src={logo} alt="logo" />
+            </Navbar.Brand>
+            <Nav className="me-auto">
+              <Nav.Link style={{ fontWeight: 'bold' }} href="#about">
+                About
+              </Nav.Link>
+              <Nav.Link style={{ fontWeight: 'bold' }} href="#experience">
+                Experience
+              </Nav.Link>
+              <Nav.Link style={{ fontWeight: 'bold' }} href="#projects">
+                Projects
+              </Nav.Link>
+              <Nav.Link style={{ fontWeight: 'bold' }} href="#contact">
+                Contact
+              </Nav.Link>
+              <Nav.Link
+                style={{ fontWeight: 'bold' }}
+                href="https://resume.creddle.io/resume/hotd8oqyo94"
+                target="_blank"
+              >
+                Resume
+              </Nav.Link>
+            </Nav>
+          </>
         )}
-        <Nav className="me-auto">
-          <Nav.Link style={{ fontWeight: 'bold' }} href="#about">
-            About
-          </Nav.Link>
-          <Nav.Link style={{ fontWeight: 'bold' }} href="#experience">
-            Experience
-          </Nav.Link>
-          <Nav.Link style={{ fontWeight: 'bold' }} href="#projects">
-            Projects
-          </Nav.Link>
-          <Nav.Link style={{ fontWeight: 'bold' }} href="#contact">
-            Contact
-          </Nav.Link>
-          <Nav.Link
-            style={{ fontWeight: 'bold' }}
-            href="https://resume.creddle.io/resume/hotd8oqyo94"
-            target="_blank"
-          >
-            Resume
-          </Nav.Link>
-        </Nav>
       </Container>
     </Navbar>
   );
