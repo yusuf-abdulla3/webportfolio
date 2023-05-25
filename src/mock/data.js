@@ -51,8 +51,8 @@ export const experienceData = [
     id: nanoid(),
     companyName: 'Helping Hands',
     occupation: 'Full Stack Developer',
-    startDate: 'Nov. 2021',
-    endDate: 'Apr. 2022',
+    startDate: 'Dec. 2021',
+    endDate: 'Mar. 2022',
     img: 'helpinghands.jpg',
     paragraphOne:
       'Developed key features on a full stack application and debugged issues that arised. Focused on working with React on the front-end. Deployed the beta via Heroku and conducted user testing for further feedback',
