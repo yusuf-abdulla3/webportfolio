@@ -34,7 +34,7 @@ export const experienceData = [
     id: nanoid(),
     companyName: 'BBE Expediting Ltd',
     img: 'bbe_logo.png',
-    occupation: 'Software Developer',
+    occupation: 'Full Stack Software Developer',
     startDate: 'Apr. 2022',
     endDate: 'Present',
     paragraphOne:
@@ -44,15 +44,15 @@ export const experienceData = [
     paragraphThree:
       'Developing and testing RESTful APIs using Python, Django REST Framework, Redis, Celery and Postman',
     paragraphFour:
-      'Tech Stack: Python, Django, Javascript, jQuery, SCSS, Bootstrap, MySQL, Celery, Redis, Travis CI, Postman',
+      'Tech Stack: Python, Django, Redis, Celery, Javascript, jQuery, SCSS, Bootstrap, MySQL, Postman, Celery, Figma, Asana',
   },
 
   {
     id: nanoid(),
     companyName: 'Helping Hands',
-    occupation: 'Software Developer',
-    startDate: 'Dec. 2021',
-    endDate: 'Mar. 2022',
+    occupation: 'Full Stack Developer',
+    startDate: 'Nov. 2021',
+    endDate: 'Apr. 2022',
     img: 'helpinghands.jpg',
     paragraphOne:
       'Developed key features on a full stack application and debugged issues that arised. Focused on working with React on the front-end. Deployed the beta via Heroku and conducted user testing for further feedback',
