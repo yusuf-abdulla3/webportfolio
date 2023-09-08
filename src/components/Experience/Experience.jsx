@@ -7,7 +7,7 @@ import PortfolioContext from '../../context/context';
 
 const Experience = () => {
   const { experience } = useContext(PortfolioContext);
-  // const { img, paragraphOne, paragraphTwo, paragraphThree, paragraphFour } = experience;
+  // const { img, paragraphOne, paragraphTwo, paragraphThree, paragraphFour, techStack } = experience;
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -38,6 +38,7 @@ const Experience = () => {
             paragraphTwo,
             paragraphThree,
             paragraphFour,
+            techStack,
           } = exp;
 
           return (
@@ -72,22 +73,25 @@ const Experience = () => {
                       className="about-wrapper__info-text"
                       style={{ marginBottom: '1.5em', fontSize: '1.5em' }}
                     >
-                      {paragraphOne ||
-                        'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.'}
+                      {paragraphOne || ''}
                     </li>
                     <li
                       className="about-wrapper__info-text"
                       style={{ marginBottom: '1.5em', fontSize: '1.5em' }}
                     >
-                      {paragraphTwo ||
-                        'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.'}
+                      {paragraphTwo || ''}
                     </li>
                     <li
                       className="about-wrapper__info-text"
                       style={{ marginBottom: '1.5em', fontSize: '1.5em' }}
                     >
-                      {paragraphThree ||
-                        'Lorem ipsum dolor sit, amet consectetur adipisicing elit.'}
+                      {paragraphThree || ''}
+                    </li>
+                    <li
+                      className="about-wrapper__info-text"
+                      style={{ marginBottom: '1.5em', fontSize: '1.5em' }}
+                    >
+                      {paragraphFour || ''}
                     </li>
 
                     <p
@@ -99,7 +103,7 @@ const Experience = () => {
                         fontWeight: 'bold',
                       }}
                     >
-                      {paragraphFour || 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.'}
+                      {techStack || ''}
                     </p>
                   </div>
                 </Fade>

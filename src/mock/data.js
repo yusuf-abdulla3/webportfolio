@@ -36,15 +36,20 @@ export const experienceData = [
     img: 'bbe_logo.png',
     occupation: 'Full Stack Software Developer',
     startDate: 'Apr. 2022',
-    endDate: 'Present',
+    endDate: 'Aug. 2023',
     paragraphOne:
-      'Participating in the full development cycle, end-to-end, from design, implementation, & testing to documentation, delivery & maintenance',
+      "Actively maintained and contributed to an internal shipping tool which manages 60% of the company's daily shipping requirements",
+    // 'Participating in the full development cycle, end-to-end, from design, implementation, & testing to documentation, delivery & maintenance',
     paragraphTwo:
-      'Assisting lead developer in enhancing and refactoring services to adhere to DRY, YAGNI, and KISS principles to improve performance, constant up-time, and maintainability',
+      'Implemented and maintained real-time carrier API integrations for up-to-date shipping rates, resulting in a 50-75% reduction in rate management time and significantly improving accuracy and scalability',
+    // 'Assisting lead developer in enhancing and refactoring services to adhere to DRY, YAGNI, and KISS principles to improve performance, constant up-time, and maintainability',
     paragraphThree:
-      'Developing and testing RESTful APIs using Python, Django REST Framework, Redis, Celery and Postman',
+      'Provided technical support and troubleshooting assistance to resolve internal and external user issues',
     paragraphFour:
-      'Tech Stack: Python, Django, Redis, Celery, Javascript, jQuery, SCSS, Bootstrap, MySQL, Postman, Celery, Figma, Asana',
+      'Demonstrated excellent written and verbal communication skills to effectively convey technical concepts to both technical and non-technical stakeholders',
+    // 'Developing and testing RESTful APIs using Python, Django REST Framework, Redis, Celery and Postman',
+    techStack:
+      'Tech Stack: Python, Django, Azure, Redis, Celery, jQuery, SCSS, Bootstrap, MySQL, Postman, Celery, Figma, Asana',
   },
 
   {
@@ -55,13 +60,15 @@ export const experienceData = [
     endDate: 'Mar. 2022',
     img: 'helpinghands.jpg',
     paragraphOne:
-      'Developed key features on a full stack application and debugged issues that arised. Focused on working with React on the front-end. Deployed the beta via Heroku and conducted user testing for further feedback',
+      'Maintained and enhanced functionality of a web application that connects youth with volunteer opportunities in the Greater Toronto Area',
     paragraphTwo:
-      "Designed new pages for the website alongside a UX designer and connected Google Analytics and Mixpanel in order to gain user data to improve the website's performance.",
+      'Contributed to front-end development using React, integrating new features and optimizing efficiency through refactoring and best practices',
     paragraphThree:
-      'Updated internal technical documentations for training purposes for future developers that join the team',
+      "Managed and maintained the organization's AWS-hosted website, ensuring a seamless online presence",
     paragraphFour:
-      'Tech Stack: React, Ruby on Rails, Bootstrap, Styled Components, AWS, Heroku, HTML, CSS, Google Analytics, Mixpanel, Airtable ',
+      "Managed and maintained the organization's AWS-hosted website, ensuring a seamless online presence",
+    techStack:
+      'Tech Stack: React, Ruby on Rails, Bootstrap, Styled Components, AWS, Heroku, Mixpanel, Airtable ',
   },
 ];
 

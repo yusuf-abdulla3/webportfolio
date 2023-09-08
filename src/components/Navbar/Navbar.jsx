@@ -10,54 +10,33 @@ const AppNavbar = () => {
   const isMobile = useMediaQuery({ query: `(max-width: 760px)` });
 
   return (
-    <Navbar variant="primary" sticky="top" className="nav">
+    <Navbar collapseOnSelect sticky="top" className="nav text-primary" expand="sm" variant="dark">
       <Container>
-        {isMobile ? (
-          <Nav className="me-auto">
-            <Nav.Link style={{ fontWeight: 'bold' }} className="nav--item" href="#hero">
+        {isMobile && (
+          <Navbar.Brand href="#hero">
+            <img src={logo} className="nav__logo" alt="logo" />
+          </Navbar.Brand>
+        )}
+        <Navbar.Toggle aria-controls="navbarScroll" style={{ color: 'white' }} />
+        <Navbar.Collapse id="navbarScroll" style={{ backgroundColor: 'black', width: '100%' }}>
+          <Nav className="me-auto text-light">
+            <Nav.Link className="nav__items" href="#hero">
               Home
             </Nav.Link>
-            <Nav.Link style={{ fontWeight: 'bold' }} href="#about">
+            <Nav.Link href="#about" className="nav__items">
               About
             </Nav.Link>
-            <Nav.Link style={{ fontWeight: 'bold' }} href="#experience">
+            <Nav.Link href="#experience" className="nav__items">
               Experience
             </Nav.Link>
-            <Nav.Link style={{ fontWeight: 'bold' }} href="#projects">
+            <Nav.Link href="#projects" className="nav__items">
               Projects
             </Nav.Link>
-            <Nav.Link style={{ fontWeight: 'bold' }} href="#contact">
+            <Nav.Link href="#contact" className="nav__items">
               Contact
             </Nav.Link>
           </Nav>
-        ) : (
-          <>
-            <Navbar.Brand href="#home">
-              <img className="nav__logo" src={logo} alt="logo" />
-            </Navbar.Brand>
-            <Nav className="me-auto">
-              <Nav.Link style={{ fontWeight: 'bold' }} href="#about">
-                About
-              </Nav.Link>
-              <Nav.Link style={{ fontWeight: 'bold' }} href="#experience">
-                Experience
-              </Nav.Link>
-              <Nav.Link style={{ fontWeight: 'bold' }} href="#projects">
-                Projects
-              </Nav.Link>
-              <Nav.Link style={{ fontWeight: 'bold' }} href="#contact">
-                Contact
-              </Nav.Link>
-              <Nav.Link
-                style={{ fontWeight: 'bold' }}
-                href="https://resume.creddle.io/resume/hotd8oqyo94"
-                target="_blank"
-              >
-                Resume
-              </Nav.Link>
-            </Nav>
-          </>
-        )}
+        </Navbar.Collapse>
       </Container>
     </Navbar>
   );
