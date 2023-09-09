@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import { Helmet } from 'react-helmet';
 import App from '../components/App';
 import { headData } from '../mock/data';
@@ -8,6 +7,14 @@ import '../style/main.scss';
 
 export default () => {
   const { title, lang, description } = headData;
+
+  const stylesheet = document.createElement('link');
+  stylesheet.setAttribute('rel', 'stylesheet');
+  stylesheet.setAttribute(
+    'href',
+    'https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css'
+  );
+  document.head.appendChild(stylesheet);
 
   return (
     <>
