@@ -10,7 +10,7 @@
   border-top: 0px;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
-  padding-bottom: 20%;
+  padding-bottom: 18%;
 
   @include respond(tab-land) {
     height: 100%;
@@ -18,9 +18,25 @@
     clip-path: none;
   }
 
+  .tech-stack-icon{
+    font-size: 5em;
+    margin: 10px;
+  }
+
+  .tech-stack{
+   display: flex;
+   flex-wrap: wrap;
+   margin-bottom: 3em;
+
+   @include respond(phone) {
+    display: flex;
+    justify-content: center;
+  }
+  }
+
   .about-wrapper {
     @include respond(phone) {
-      padding-bottom: 5rem;
+      padding-bottom: 20rem;
     }
 
     &__image {

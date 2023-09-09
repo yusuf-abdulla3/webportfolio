@@ -7,8 +7,6 @@ import PortfolioContext from '../../context/context';
 
 const Experience = () => {
   const { experience } = useContext(PortfolioContext);
-  // const { img, paragraphOne, paragraphTwo, paragraphThree, paragraphFour, techStack } = experience;
-
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 

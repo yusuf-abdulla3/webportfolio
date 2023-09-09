@@ -21,7 +21,7 @@ export const aboutData = {
   paragraphOne:
     "Hi! I'm a Full Stack Developer with a passion for building creative and effective applications.",
   paragraphTwo:
-    "I'm knowledgeable in creating and designing user interfaces, debugging and testing codes, building and writing databases, and developing and maintaining applications.",
+    "I'm knowledgeable in creating and designing user interfaces, debugging and testing codes, building and writing databases, and developing and maintaining applications. I have experience building full stack features, creating and integrating REST Apis, and bringing to life responsive and well-designed UIs. ",
   paragraphThree:
     'I enjoy solving problems and using my creativity to bring ideas to life that users might find useful!',
   resume: 'https://resume.creddle.io/resume/hotd8oqyo94',

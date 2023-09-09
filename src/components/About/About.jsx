@@ -40,6 +40,39 @@ const About = () => {
                 <p className="about-wrapper__info-text">{paragraphOne || ''}</p>
                 <p className="about-wrapper__info-text">{paragraphTwo || ''}</p>
                 <p className="about-wrapper__info-text">{paragraphThree || ''}</p>
+                <p className="about-wrapper__info-text" style={{ margin: '2em 0' }}>
+                  Some of the technologies, I have experience using are:{' '}
+                </p>
+                <div className="tech-stack">
+                  <i className="devicon-javascript-plain tech-stack-icon" />
+                  <i className="devicon-typescript-plain tech-stack-icon" />
+                  <i className="devicon-python-plain-wordmark tech-stack-icon" />
+                  <i className="devicon-ruby-plain-wordmark tech-stack-icon" />
+                  <i className="devicon-react-original-wordmark tech-stack-icon" />
+                  <i className="devicon-redux-original tech-stack-icon" />
+                  <i className="devicon-django-plain-wordmark tech-stack-icon" />
+                  <i className="devicon-express-original-wordmark tech-stack-icon" />
+                  <i className="devicon-rails-plain-wordmark tech-stack-icon" />
+                  <i className="devicon-html5-plain-wordmark tech-stack-icon" />
+                  <i className="devicon-css3-plain-wordmark tech-stack-icon" />
+                  <i className="devicon-mocha-plain tech-stack-icon" />
+                  <i className="devicon-bootstrap-plain-wordmark tech-stack-icon" />
+                  <i className="devicon-tailwindcss-original-wordmark tech-stack-icon" />
+                  <i className="devicon-postgresql-plain-wordmark tech-stack-icon" />
+                  <i className="devicon-mysql-plain-wordmark tech-stack-icon" />
+                  <i className="devicon-sqlite-plain-wordmark tech-stack-icon" />
+                  <i className="devicon-mongodb-plain-wordmark tech-stack-icon" />
+                  <i className="devicon-redis-plain-wordmark tech-stack-icon" />
+                  <i className="devicon-jquery-plain-wordmark tech-stack-icon" />
+                  <i className="devicon-gatsby-plain-wordmark tech-stack-icon" />
+                  <i className="devicon-github-original-wordmark tech-stack-icon" />
+                  <i className="devicon-figma-plain tech-stack-icon" />
+                  <i className="devicon-jest-plain tech-stack-icon" />
+                  <i className="devicon-pytest-plain-wordmark tech-stack-icon" />
+                  <i className="devicon-rspec-original-wordmark tech-stack-icon" />
+                  <i className="devicon-storybook-plain-wordmark tech-stack-icon" />
+                  <i className="devicon-vagrant-plain-wordmark tech-stack-icon" />
+                </div>
                 {resume && (
                   <span className="d-flex my-3">
                     <a
