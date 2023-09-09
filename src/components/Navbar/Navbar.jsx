@@ -12,14 +12,13 @@ const AppNavbar = () => {
   return (
     <Navbar collapseOnSelect sticky="top" className="nav text-primary" expand="sm" variant="dark">
       <Container>
-        {isMobile && (
-          <Navbar.Brand href="#hero">
-            <img src={logo} className="nav__logo" alt="logo" />
-          </Navbar.Brand>
-        )}
+        <Navbar.Brand href="#hero">
+          <img src={logo} className="nav__logo" alt="logo" />
+        </Navbar.Brand>
+
         <Navbar.Toggle aria-controls="navbarScroll" style={{ color: 'white' }} />
         <Navbar.Collapse id="navbarScroll" style={{ backgroundColor: 'black', width: '100%' }}>
-          <Nav className="me-auto text-light">
+          <Nav className={!isMobile ? 'mx-auto' : 'me-auto'}>
             <Nav.Link className="nav__items" href="#hero">
               Home
             </Nav.Link>
@@ -34,6 +33,13 @@ const AppNavbar = () => {
             </Nav.Link>
             <Nav.Link href="#contact" className="nav__items">
               Contact
+            </Nav.Link>
+            <Nav.Link
+              target="_blank"
+              href="https://resume.creddle.io/resume/hotd8oqyo94"
+              className="nav__items"
+            >
+              Resume
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>

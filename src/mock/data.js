@@ -24,7 +24,7 @@ export const aboutData = {
     "I'm knowledgeable in creating and designing user interfaces, debugging and testing codes, building and writing databases, and developing and maintaining applications.",
   paragraphThree:
     'I enjoy solving problems and using my creativity to bring ideas to life that users might find useful!',
-  resume: 'https://resume.creddle.io/resume/hotd8oqyo94', // if no resume, the button will not show up
+  resume: 'https://resume.creddle.io/resume/hotd8oqyo94',
 };
 
 // EXPERIENCE DATA
@@ -39,15 +39,12 @@ export const experienceData = [
     endDate: 'Aug. 2023',
     paragraphOne:
       "Actively maintained and contributed to an internal shipping tool which manages 60% of the company's daily shipping requirements",
-    // 'Participating in the full development cycle, end-to-end, from design, implementation, & testing to documentation, delivery & maintenance',
     paragraphTwo:
       'Implemented and maintained real-time carrier API integrations for up-to-date shipping rates, resulting in a 50-75% reduction in rate management time and significantly improving accuracy and scalability',
-    // 'Assisting lead developer in enhancing and refactoring services to adhere to DRY, YAGNI, and KISS principles to improve performance, constant up-time, and maintainability',
     paragraphThree:
       'Provided technical support and troubleshooting assistance to resolve internal and external user issues',
     paragraphFour:
       'Demonstrated excellent written and verbal communication skills to effectively convey technical concepts to both technical and non-technical stakeholders',
-    // 'Developing and testing RESTful APIs using Python, Django REST Framework, Redis, Celery and Postman',
     techStack:
       'Tech Stack: Python, Django, Azure, Redis, Celery, jQuery, SCSS, Bootstrap, MySQL, Postman, Celery, Figma, Asana',
   },
