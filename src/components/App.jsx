@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Analytics } from '@vercel/analytics';
 import Hero from './Hero/Hero';
 import About from './About/About';
 import Experience from './Experience/Experience';
@@ -45,6 +46,7 @@ function App() {
         <Projects />
         <Contact />
         <Footer />
+        <Analytics />
       </PortfolioProvider>
     </>
   );
