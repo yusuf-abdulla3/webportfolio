@@ -38,13 +38,13 @@ export const experienceData = [
     startDate: 'Apr. 2022',
     endDate: 'Aug. 2023',
     paragraphOne:
-      "Actively maintained and contributed to an internal shipping tool which manages 60% of the company's daily shipping requirements",
+      ' Actively maintained and contributed to key full-stack components of a shipping application which manages all internal and client shipping orders',
     paragraphTwo:
-      'Implemented and maintained real-time carrier API integrations for up-to-date shipping rates, resulting in a 50-75% reduction in rate management time and significantly improving accuracy and scalability',
+      'Implemented and maintained real-time carrier API integrations using Django and Postman for up-to-date shipping rates, reducing costs by $6k, decreasing latency by 50% and significantly improving accuracy',
     paragraphThree:
-      'Provided technical support and troubleshooting assistance to resolve internal and external user issues',
+      'Designed RESTful API endpoints using Django Rest Framework (DRF), Celery, and Redis to facilitate seamless communication between front-end and back-end systems',
     paragraphFour:
-      'Demonstrated excellent written and verbal communication skills to effectively convey technical concepts to both technical and non-technical stakeholders',
+      'Provided technical support and troubleshooting assistance to resolve internal and external user issues and demonstrated excellent written and verbal communication skills to effectively convey technical concepts to both technical and non-technical stakeholders',
     techStack:
       'Tech Stack: Python, Django, Azure, Redis, Celery, jQuery, SCSS, Bootstrap, MySQL, Postman, Celery, Figma, Asana',
   },
@@ -53,8 +53,8 @@ export const experienceData = [
     id: nanoid(),
     companyName: 'Helping Hands',
     occupation: 'Full Stack Developer',
-    startDate: 'Dec. 2021',
-    endDate: 'Mar. 2022',
+    startDate: 'Nov. 2021',
+    endDate: 'Apr. 2022',
     img: 'helpinghands.jpg',
     paragraphOne:
       'Maintained and enhanced functionality of a web application that connects youth with volunteer opportunities in the Greater Toronto Area',
@@ -63,7 +63,7 @@ export const experienceData = [
     paragraphThree:
       "Managed and maintained the organization's AWS-hosted website, ensuring a seamless online presence",
     paragraphFour:
-      "Managed and maintained the organization's AWS-hosted website, ensuring a seamless online presence",
+      'Collaborated with UX designer to create engaging app pages using Figma and compiled detailed internal technical documentation to facilitate smooth onboarding for future developers',
     techStack:
       'Tech Stack: React, Ruby on Rails, Bootstrap, Styled Components, AWS, Heroku, Mixpanel, Airtable ',
   },
