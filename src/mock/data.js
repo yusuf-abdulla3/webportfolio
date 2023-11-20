@@ -91,6 +91,15 @@ export const projectsData = [
   },
   {
     id: nanoid(),
+    img: 'tic-tac-toe.jpg',
+    title: 'Tic Tac Toe',
+    info: 'A React app that allows two players to play a game of Tic Tac Toe!',
+    info2: 'Tech Stack: React, CSS',
+    url: 'https://github.com/yusuf-abdulla3/tic-tac-toe',
+    deployedUrl: 'https://tic-tac-toe-umber-kappa.vercel.app/',
+  },
+  {
+    id: nanoid(),
     img: 'ciao.jpg',
     title: 'Ciao',
     info: 'App that allows users to create virtual greeting cards containing text, images, gifs and videos that they can build with others and send to a recipient.',
