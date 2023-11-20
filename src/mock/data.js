@@ -91,7 +91,7 @@ export const projectsData = [
   },
   {
     id: nanoid(),
-    img: 'tic-tac-toe.jpg',
+    img: 'tic-tac-toe.png',
     title: 'Tic Tac Toe',
     info: 'A React app that allows two players to play a game of Tic Tac Toe!',
     info2: 'Tech Stack: React, CSS',
