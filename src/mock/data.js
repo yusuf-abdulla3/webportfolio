@@ -100,6 +100,15 @@ export const projectsData = [
   },
   {
     id: nanoid(),
+    img: 'investment-calculator.png',
+    title: 'Investment Calculator',
+    info: 'A React app that calculates the return on investments! Provides calculations for the total investment value, yearly interest amount, total interest amount, and total invested amount.',
+    info2: 'Tech Stack: React, CSS',
+    url: 'https://github.com/yusuf-abdulla3/investment-calculator',
+    deployedUrl: 'https://investment-calculator-green.vercel.app/',
+  },
+  {
+    id: nanoid(),
     img: 'ciao.jpg',
     title: 'Ciao',
     info: 'App that allows users to create virtual greeting cards containing text, images, gifs and videos that they can build with others and send to a recipient.',
