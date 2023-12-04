@@ -34,7 +34,7 @@ export const experienceData = [
     id: nanoid(),
     companyName: 'BBE Expediting Ltd',
     img: 'bbe_logo.png',
-    occupation: 'Full Stack Software Developer',
+    occupation: 'Software Developer',
     startDate: 'Apr. 2022',
     endDate: 'Aug. 2023',
     paragraphOne:
@@ -52,7 +52,7 @@ export const experienceData = [
   {
     id: nanoid(),
     companyName: 'Helping Hands',
-    occupation: 'Full Stack Developer',
+    occupation: 'Software Developer',
     startDate: 'Nov. 2021',
     endDate: 'Apr. 2022',
     img: 'helpinghands.jpg',
