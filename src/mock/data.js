@@ -109,6 +109,15 @@ export const projectsData = [
   },
   {
     id: nanoid(),
+    img: 'timer-challenge.png',
+    title: 'Timer Challenge',
+    info: 'A React game that accurately tests how close a player can get to stopping a timer at the target time.',
+    info2: 'Tech Stack: React, CSS',
+    url: 'https://github.com/yusuf-abdulla3/timer-challenge',
+    deployedUrl: 'https://timer-challenge-sable.vercel.app//',
+  },
+  {
+    id: nanoid(),
     img: 'ciao.jpg',
     title: 'Ciao',
     info: 'App that allows users to create virtual greeting cards containing text, images, gifs and videos that they can build with others and send to a recipient.',
