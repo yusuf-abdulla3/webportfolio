@@ -43,6 +43,18 @@ const AppNavbar = () => {
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
+        <div className="icons">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.linkedin.com/in/yusuf-abdulla/"
+          >
+            <i className="fa fa-linkedin fa-inverse fa-xl icon-size" />
+          </a>
+          <a target="_blank" rel="noopener noreferrer" href="https://www.github.com/yusuf-abdulla3">
+            <i className="fa fa-github fa-inverse icon-size" />
+          </a>
+        </div>
       </Container>
     </Navbar>
   );

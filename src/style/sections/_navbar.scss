@@ -33,3 +33,18 @@ a {
 margin: 0 1em;
 }
 }
+
+.icons{
+  display: flex;
+  justify-content: space-between;
+  .icon-size{
+    margin: 1rem;
+    font-size: 1.7rem;
+
+    &:hover{
+      color:rgb(179, 56, 179);
+      font-size: 1.9rem;
+    }
+  }
+  
+}
