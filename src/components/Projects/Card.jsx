@@ -37,7 +37,7 @@ const ProjectCard = ({ title, info, info2, deployedUrl, url, img }) => {
           {info}
         </Typography>
         <br />
-        <Typography variant="body1" style={{ color: '#FA5F55', fontSize: '1rem' }}>
+        <Typography className="new-text-color" variant="body1" style={{ fontSize: '1rem' }}>
           {info2}
         </Typography>
       </CardContent>

@@ -93,11 +93,10 @@ const Experience = () => {
                     </li>
 
                     <p
-                      className="about-wrapper__info-text"
+                      className="about-wrapper__info-text new-text-color"
                       style={{
                         marginBottom: '1.5em',
                         fontSize: '1.5em',
-                        color: '#FA5F55',
                         fontWeight: 'bold',
                       }}
                     >
