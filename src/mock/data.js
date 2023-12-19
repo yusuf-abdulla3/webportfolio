@@ -1,4 +1,9 @@
 import { nanoid } from 'nanoid';
+import CiaoVideo from '../videos/ciao.mp4';
+import NetflixCloneVideo from '../videos/netflix_clone.mp4';
+import TicTacToeVideo from '../videos/tic_tac_toe.mp4';
+import InvestmentCalculatorVideo from '../videos/investment_calculator.mp4';
+import TimerChallengeVideo from '../videos/timer_challenge.mp4';
 
 // HEAD DATA
 export const headData = {
@@ -74,6 +79,7 @@ export const projectsData = [
   {
     id: nanoid(),
     img: 'netflix-clone-img.png',
+    vid: NetflixCloneVideo,
     title: 'Netflix Clone',
     info: 'A netflix clone that users can interact with to view movie trailers of popular TV Shows/Movies',
     info2: 'Tech Stack: React, Firebase, CSS, TMDB API',
@@ -92,6 +98,7 @@ export const projectsData = [
   {
     id: nanoid(),
     img: 'tic-tac-toe.png',
+    vid: TicTacToeVideo,
     title: 'Tic Tac Toe',
     info: 'A React app that allows two players to play a game of Tic Tac Toe!',
     info2: 'Tech Stack: React, CSS',
@@ -101,6 +108,7 @@ export const projectsData = [
   {
     id: nanoid(),
     img: 'investment-calculator.png',
+    vid: InvestmentCalculatorVideo,
     title: 'Investment Calculator',
     info: 'A React app that calculates the return on investments! Provides calculations for the total investment value, yearly interest amount, total interest amount, and total invested amount.',
     info2: 'Tech Stack: React, CSS',
@@ -110,6 +118,7 @@ export const projectsData = [
   {
     id: nanoid(),
     img: 'timer-challenge.png',
+    vid: TimerChallengeVideo,
     title: 'Timer Challenge',
     info: 'A React game that accurately tests how close a player can get to stopping a timer at the target time.',
     info2: 'Tech Stack: React, CSS',
@@ -119,6 +128,7 @@ export const projectsData = [
   {
     id: nanoid(),
     img: 'ciao.jpg',
+    vid: CiaoVideo,
     title: 'Ciao',
     info: 'App that allows users to create virtual greeting cards containing text, images, gifs and videos that they can build with others and send to a recipient.',
     info2: 'Tech Stack: PostgreSQL, Express, React.js, Node.js, Bootstrap, Giphy API, Unsplash API',

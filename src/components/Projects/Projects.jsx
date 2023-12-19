@@ -30,7 +30,7 @@ const Projects = () => {
           <Title title="Projects" />
           <Grid container spacing={10} className="project-wrapper__container">
             {projects.map((project) => {
-              const { title, info, info2, url, deployedUrl, img, id } = project;
+              const { title, info, info2, url, deployedUrl, img, id, vid } = project;
 
               return (
                 <Container key={id}>
@@ -62,6 +62,7 @@ const Projects = () => {
                           url={url}
                           info={info}
                           info2={info2}
+                          vid={vid}
                         />
                       </Tilt>
                     </Fade>
