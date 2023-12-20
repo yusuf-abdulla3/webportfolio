@@ -7,7 +7,7 @@ import BackgroundVideo from '../../videos/background-video.mp4';
 
 const Header = () => {
   const { hero } = useContext(PortfolioContext);
-  const { title, name, cta } = hero;
+  const { title, cta, intro } = hero;
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -54,10 +54,12 @@ const Header = () => {
           }}
         >
           <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
+            <h4 className="hero-subtitle">{intro || ''}</h4>
+            <h1 className="hero-title">{title || ''}</h1>
             <h1 className="hero-title">
-              {title || ''}
-              <span className="new-text-color">{name || ''}</span>
+              I&apos;m a <span className="new-text-color">Full Stack Developer</span>{' '}
             </h1>
+            <h1 className="hero-title">and Tech Enthusiast!</h1>
           </Fade>
           <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
             <p className="hero-cta">

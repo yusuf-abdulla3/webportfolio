@@ -14,8 +14,10 @@ export const headData = {
 
 // HERO DATA
 export const heroData = {
-  title: 'Yusuf Abdulla | Full Stack Developer ',
-  name: 'Welcome To My Portfolio!',
+  intro: 'Hi! 👋🏽 My name is',
+  title: 'Yusuf Abdulla.',
+  desc: "With over two years of experience in full-stack development and an academic background in Business Technology Management, I've honed my skills in crafting user-friendly applications with a meticulous eye for detail. My journey in the tech world is fueled by a passion for turning complex ideas into simple, intuitive solutions that users love. Aspiring to contribute meaningfully to innovative projects, I bring enthusiasm and commitment to every endeavor. Let's collaborate and bring our shared tech aspirations to life! 🚀",
+  name: "I'm a Full Stack Developer and Tech Enthusiast!",
   cta: 'More About Me',
   img: 'profile.jpg',
 };

@@ -110,10 +110,6 @@
   box-shadow: 0 0 1px rgba(255, 255, 255, .5);
 }
 
-#tech-stack {
-  font-weight: bold ;
-  color: #FA5F55
-}
 
 .project_card__button1 {
     background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
@@ -142,6 +138,8 @@
   &:hover {
     box-shadow: rgba(80, 63, 205, 0.5) 0 1px 30px;
     transition-duration: .1s;
+    color:rgb(179, 56, 179);
+
   }
   &__disabled {
     border-radius: 8px;
@@ -170,8 +168,4 @@
 }
 }
 
-// .card_buttons{
-//   display:flex;
-//   justify-content: center;
-// }
 
