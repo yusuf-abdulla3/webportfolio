@@ -135,6 +135,7 @@ export const projectsData = [
     info: 'App that allows users to create virtual greeting cards containing text, images, gifs and videos that they can build with others and send to a recipient.',
     info2: 'Tech Stack: PostgreSQL, Express, React.js, Node.js, Bootstrap, Giphy API, Unsplash API',
     url: 'https://github.com/yusuf-abdulla3/Ciao',
+    deployedURL: 'https://ciao-client.vercel.app',
   },
   {
     id: nanoid(),
