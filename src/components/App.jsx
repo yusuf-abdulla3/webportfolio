@@ -36,7 +36,7 @@ function App() {
     setProjects([...projectsData]);
     setContact({ ...contactData });
     setFooter({ ...footerData });
-    setTimeout(() => setLoader(false), 1200);
+    setTimeout(() => setLoader(false), 3000);
   }, []);
 
   return (
