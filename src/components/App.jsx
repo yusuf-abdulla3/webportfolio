@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Container } from 'react-bootstrap';
 import Hero from './Hero/Hero';
 import About from './About/About';
 import Experience from './Experience/Experience';
@@ -26,6 +27,8 @@ function App() {
   const [contact, setContact] = useState({});
   const [footer, setFooter] = useState({});
 
+  const [loader, setLoader] = useState(true);
+
   useEffect(() => {
     setHero({ ...heroData });
     setAbout({ ...aboutData });
@@ -33,10 +36,32 @@ function App() {
     setProjects([...projectsData]);
     setContact({ ...contactData });
     setFooter({ ...footerData });
+    setTimeout(() => setLoader(false), 1200);
   }, []);
 
   return (
     <>
+      {loader && (
+        <Container
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            zIndex: '2',
+            position: 'fixed',
+            padding: '0',
+            margin: '0',
+            top: '0',
+            left: '0',
+            minWidth: '100%',
+            minHeight: '100%',
+            background: 'rgba(0, 0, 0, 0.9)',
+          }}
+        >
+          <span className="loader" />
+        </Container>
+      )}
+
       <AppNavbar />
       <PortfolioProvider value={{ hero, about, experience, projects, contact, footer }}>
         <Hero />
