@@ -40,7 +40,7 @@ const Experience = () => {
           } = exp;
 
           return (
-            <Row key={id} className="experience-wrapper">
+            <Row key={id} className="experience-wrapper" style={{ margin: '4rem 0' }}>
               <Col md={6} sm={12}>
                 <Fade bottom duration={1000} delay={600} distance="30px">
                   <p className="h1"> {companyName}</p>
