@@ -31,7 +31,8 @@ export const aboutData = {
     "I'm knowledgeable in creating and designing user interfaces, debugging and testing codes, building and writing databases, and developing and maintaining applications. I have experience building full stack features, creating and integrating REST Apis, and bringing to life responsive and well-designed UIs. ",
   paragraphThree:
     'I enjoy solving problems and using my creativity to bring ideas to life that users might find useful!',
-  resume: 'https://resume.creddle.io/resume/hotd8oqyo94',
+  resume:
+    'https://docs.google.com/document/d/1dY9cg-TbUFREPiRSnjCB4IzM9deNPdW1esXV7MOn5Xs/edit?usp=drive_link',
 };
 
 // EXPERIENCE DATA
