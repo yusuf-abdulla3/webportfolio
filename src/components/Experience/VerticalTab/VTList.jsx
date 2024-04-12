@@ -10,7 +10,7 @@ function VTlist({onClick, index, data, activeTabId}) {
   };
 
   return (
-    <li key={index} style={{ listStyle: "none", textAlign: "left", margin: "10px" }}>
+    <li key={index} style={{ listStyle: "none", textAlign: "left" }}>
       <button
         className="section__Jobs-buttonCompany"
         onClick={Clicked}
