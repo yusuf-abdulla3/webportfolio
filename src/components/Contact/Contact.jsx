@@ -15,7 +15,7 @@ const Contact = () => {
         <Fade bottom duration={1000} delay={800} distance="30px">
           <div className="contact-wrapper">
             <p className="contact-wrapper__text">
-              I&apos;m currently seeking new opportunities in the tech industry. I&apos;m passionate about using my skills and experience, whether itI&apos;ms building innovative web applications, analyzing data, or exploring emerging technologies. I thrive in collaborative environments and am eager to learn and grow alongside a talented team.
+              I&apos;m currently seeking new opportunities in the tech industry. I&apos;m passionate about using my skills and experience, whether it&apos;s building innovative web applications, analyzing data, or exploring emerging technologies. I thrive in collaborative environments and am eager to learn and grow alongside a talented team.
             </p>
 
             <p className="contact-wrapper__text" style={{ marginTop: '1.5em' }}>
