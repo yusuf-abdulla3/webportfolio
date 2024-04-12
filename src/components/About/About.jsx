@@ -38,22 +38,16 @@ const About = () => {
             <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
               <div className="about-wrapper__info">
                 <p className="about-wrapper__info-text">
-                  Hello! I&apos;m Yusuf, a tech enthusiast who delved into coding early on,
-                  exploring the world of HTML, CSS, and JavaScript. Fast forward, and I&apos;ve
-                  become a passionate Full Stack Developer with over 2 years of experience,
-                  specializing in transforming intricate concepts into user-friendly solutions.
+                Hi, I&apos;m Yusuf! A tech enthusiast who delved into coding early on, exploring the world of HTML, CSS, and JavaScript. Fast forward, and I've become a passionate Full Stack Developer with over 2 years of experience building user-centric applications. I have a strong foundation in HTML, CSS, JavaScript and Python, and have expanded my expertise to include front-end frameworks like React and backend frameworks like Express, Django and more.
                 </p>
                 <p className="about-wrapper__info-text">
-                  From spearheading several critical full-stack projects during my time at BBE
-                  Expediting Ltd to leveraging a tech arsenal featuring JavaScript, React, Python,
-                  Django, and more, I thrive on delivering high-quality software with a touch of
-                  creativity. Currently seeking new opportunities to continue building meaningful
-                  and user-centric products, I bring a cheerful demeanor and a commitment to
-                  excellence to any team.
+                  I have a proven track record of delivering high-quality, creative software solutions throughout my past experiences at BBE Expediting Ltd and Helping Hands App. I've spearheaded critical full-stack projects, showcasing a keen ability to translate complex concepts into user-friendly interfaces.                
                 </p>
                 <p className="about-wrapper__info-text">
-                  Ready to infuse your projects with my tech magic, let&apos;s collaborate and
-                  create coding wonders together! 🚀{' '}
+                I'm committed to excellence and thrive in collaborative environments. I&apos;m eager to contribute a positive attitude and a passion for building meaningful products to a new team.                
+                </p>
+                <p className="about-wrapper__info-text">
+                Ready to leverage my technical expertise to tackle your next challenge. Let's connect and discuss how I can help bring your vision to life. 🚀{' '}
                 </p>
                 <p className="about-wrapper__info-text" style={{ margin: '2em 0' }}>
                   Some of the technologies, I have experience using are:

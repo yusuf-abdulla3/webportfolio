@@ -36,7 +36,7 @@ const AppNavbar = () => {
             </Nav.Link>
             <Nav.Link
               target="_blank"
-              href="https://resume.creddle.io/resume/hotd8oqyo94"
+              href="https://drive.google.com/file/d/135I8sWoXo_W5fzR3_WXUOu4VC6nxDlSW/view?usp=sharing"
               className="nav__items"
             >
               Resume

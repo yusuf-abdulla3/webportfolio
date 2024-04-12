@@ -55,9 +55,16 @@
 
       @include respond(tab-port) {
         padding-bottom: 6.4rem;
+        box-shadow: none;
+
       }
       @include respond(tab-land) {
         height: 100%;
+        box-shadow: none;
+
+      }
+      @include respond(phone) {
+        box-shadow: none;
       }
     }
 

@@ -32,7 +32,7 @@ export const aboutData = {
   paragraphThree:
     'I enjoy solving problems and using my creativity to bring ideas to life that users might find useful!',
   resume:
-    'https://docs.google.com/document/d/1dY9cg-TbUFREPiRSnjCB4IzM9deNPdW1esXV7MOn5Xs/edit?usp=drive_link',
+    'https://drive.google.com/file/d/135I8sWoXo_W5fzR3_WXUOu4VC6nxDlSW/view?usp=sharing',
 };
 
 // EXPERIENCE DATA

@@ -4,6 +4,9 @@ import { Container, Row, Col } from 'react-bootstrap';
 import Title from '../Title/Title';
 import ExperienceImg from '../Image/ExperienceImg';
 import PortfolioContext from '../../context/context';
+import VerticalTab from './VerticalTab/VerticalTab.jsx';
+import resumeData from '../../mock/resumeData.js';
+
 
 const Experience = () => {
   const { experience } = useContext(PortfolioContext);
@@ -24,6 +27,10 @@ const Experience = () => {
     <section id="experience">
       <Container>
         <Title title="Experience" />
+        
+        <VerticalTab data={resumeData.jobs} />
+
+      {/* <div className="col-10">
         {experience.map((exp) => {
           const {
             id,
@@ -105,9 +112,12 @@ const Experience = () => {
                   </div>
                 </Fade>
               </Col>
-            </Row>
+            </Row>            
           );
         })}
+        </div>
+        </div> */}
+
       </Container>
     </section>
   );

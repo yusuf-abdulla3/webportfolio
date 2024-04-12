@@ -25,7 +25,7 @@ const Header = () => {
   return (
     <>
       <section id="hero" className="jumbotron" style={{ display: 'flex', flexDirection: 'column' }}>
-        <Container>
+        {/* <Container>
           <video
             autoPlay
             loop
@@ -42,7 +42,7 @@ const Header = () => {
           >
             <source src={BackgroundVideo} type="video/mp4" />
           </video>
-        </Container>
+        </Container> */}
 
         <Container
           style={{
