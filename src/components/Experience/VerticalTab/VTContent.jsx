@@ -1,32 +1,40 @@
 import React from "react";
 import "./VTContent.css";
 import ExperienceImg from '../../Image/ExperienceImg';
+import PropTypes from 'prop-types';
 
 
-function VTcontent(props) {
-  let data = props.data.expData;
+
+function VTcontent({index, data, activeTabId}) {
+  let expData = data.expData;
 
   return (
     <div
-      key={props.index}
+      key={index}
       className="section__Jobs-styledContent"
       style={
-        props.activeTabId === props.index
+        activeTabId === index
           ? { display: "block" }
           : { display: "none" }
       }
     >
         <div>
-          <ExperienceImg alt="company logo" filename={data.img} />
+          <ExperienceImg alt="company logo" filename={expData.img} />
         </div>
-      <h4>{data.position}</h4>
+      <h4>{expData.position}</h4>
 
-      <h5>{data.period}</h5>
-      {data.details.map(detail => (
+      <h5>{expData.period}</h5>
+      {expData.details.map(detail => (
         <p className="section__Jobs-detail">{detail}</p>
       ))}
     </div>
   );
 }
+
+VTcontent.propTypes = {
+  data: PropTypes.object,
+  index: PropTypes.number, 
+  activeTabId: PropTypes.number
+};
 
 export default VTcontent;

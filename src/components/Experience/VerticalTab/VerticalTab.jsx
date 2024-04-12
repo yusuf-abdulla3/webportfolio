@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import { Container, Row, Col } from "reactstrap";
+import PropTypes from 'prop-types';
 
+import { Container, Row, Col } from "reactstrap";
 import VTList from "./VTList";
 import VTContent from "./VTContent";
-
 import "./VericalTab.css";
 
-function VerticalTab(props) {
+function VerticalTab({data}) {
   const [activeTabId, setActiveTabId] = useState(0);
 
   function btnClick(id) {
@@ -19,7 +19,7 @@ function VerticalTab(props) {
         <Col sm="3">
           <div className="section__Jobs-styledTab">
             <ul className="section__Jobs-styledTabList">
-              {props.data.map((job, index) => (
+              {data.map((job, index) => (
                 <VTList
                   key={index}
                   onClick={btnClick}
@@ -32,7 +32,7 @@ function VerticalTab(props) {
           </div>
         </Col>
         <Col sm="9">
-          {props.data.map((job, index) => (
+          {data.map((job, index) => (
             <VTContent
               data={job}
               key={index}
@@ -57,4 +57,10 @@ function VerticalTab(props) {
   );
 }
 
+VerticalTab.propTypes = {
+  data: PropTypes.object,
+};
+
 export default VerticalTab;
+
+

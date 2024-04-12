@@ -3,7 +3,6 @@ import { Container } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
 import { Link } from 'react-scroll';
 import PortfolioContext from '../../context/context';
-import BackgroundVideo from '../../videos/background-video.mp4';
 
 const Header = () => {
   const { hero } = useContext(PortfolioContext);
@@ -25,24 +24,6 @@ const Header = () => {
   return (
     <>
       <section id="hero" className="jumbotron" style={{ display: 'flex', flexDirection: 'column' }}>
-        {/* <Container>
-          <video
-            autoPlay
-            loop
-            muted
-            style={{
-              position: 'absolute',
-              width: '100%',
-              left: '50%',
-              top: '50%',
-              height: '100%',
-              objectFit: 'cover',
-              transform: 'translate(-50%, -50%)',
-            }}
-          >
-            <source src={BackgroundVideo} type="video/mp4" />
-          </video>
-        </Container> */}
 
         <Container
           style={{
