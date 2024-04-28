@@ -7,6 +7,7 @@ import VTContent from "./VTContent";
 import "./VericalTab.css";
 
 function VerticalTab({data}) {
+  console.log("DATA", data)
   const [activeTabId, setActiveTabId] = useState(0);
 
   function btnClick(id) {
@@ -58,7 +59,7 @@ function VerticalTab({data}) {
 }
 
 VerticalTab.propTypes = {
-  data: PropTypes.object,
+  data: PropTypes.any,
 };
 
 export default VerticalTab;
